@@ -40,12 +40,6 @@
 
   <script src="/js/jquery-2.0.3.min.js"></script>
   
-    <script src="/js/marked.js"></script>
-    <script src="/js/comment.js"></script>
-    <script src="/js/timeago.min.js"></script>
-    <script src="/js/highlight.min.js"></script>
-	<script src="/js/spin.min.js"></script>
-  
   <!-- analytics -->
   
 
@@ -197,26 +191,6 @@
 	
 <section id="comment">
   <h2 class="title">留言</h2>
-    	 
-	 <div id="comment-thread"></div>
-	 <div id="loading-spin"></div>
-	 <script type="text/javascript">
-	   getComments({
-           type: "github" ? "github" : "github",       
-	       user: "rickylin",
-	       repo: "BlogComments",
-		   client_id: "c345ccb22c518a9ffba5",
-           client_secret: "65b82b6548d7c441725ba6b0dd18476ab4cc8cf1",
-		   no_comment: "暂时还没有留言呢，点击下面的按钮去留言吧！",
-		   go_to_comment: "去留言",
-		   no_issue: "no_issue",
-		   issue_title: "数值格式化字符“N”在Windows和Linux/Mac OS里结果不同",
-		   issue_id: "",
-		   btn_class: "btn btn-primary",
-		   comments_target: "#comment-thread",
-		   loading_target: "#loading_spin"
-		   });
-	 </script>
   
 </section>
 
@@ -308,22 +282,6 @@
 
 
 <!-- syntax highlighting -->
-
-  <script>
-  marked.setOptions({
-    highlight: function (code, lang) {
-        return hljs.highlightAuto(code).value;
-    }
-  });
-  function Highlighting(){
-    var markdowns = document.getElementsByClassName('markdown');
-    for(var i=0;i<markdowns.length;i++){
-        if(markdowns[i].innerHTML) markdowns[i].innerHTML =marked(markdowns[i].innerHTML);
-    }
-  }
-  window.addEventListener('DOMContentLoaded', Highlighting, false);
-  window.addEventListener('load', Highlighting, false);
-  </script>
 
 
 </body>

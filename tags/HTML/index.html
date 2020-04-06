@@ -40,12 +40,6 @@
 
   <script src="/js/jquery-2.0.3.min.js"></script>
   
-    <script src="/js/marked.js"></script>
-    <script src="/js/comment.js"></script>
-    <script src="/js/timeago.min.js"></script>
-    <script src="/js/highlight.min.js"></script>
-	<script src="/js/spin.min.js"></script>
-  
   <!-- analytics -->
   
 
@@ -186,20 +180,6 @@
 	
 			<div class="widget">
     
-	    <h4 class="dsq-widget-title">最新留言</h4>
-		<div id="recent-comments"></div>
-		<script type="text/javascript">
-		    getRecentCommentsList({
-			   type: "github" ? "github" : "github",
-			   user: "rickylin",
-               repo: "BlogComments",
-               client_id: "c345ccb22c518a9ffba5",
-               client_secret: "65b82b6548d7c441725ba6b0dd18476ab4cc8cf1",
-			   count: "5" ? "5" : 5,
-			   recent_comments_target: "#recent-comments"
-			});
-		</script>
-	
 </div>
 
 		
@@ -210,45 +190,45 @@
 		<h4>标签云</h4>
 		<ul class="tag_box inline list-unstyled">		
 		
-			<li><a href="/tags/算法/">算法<span>2</span></a></li>
-		
-			<li><a href="/tags/EntityFramework/">EntityFramework<span>1</span></a></li>
-		
-			<li><a href="/tags/Deployment/">Deployment<span>1</span></a></li>
-		
-			<li><a href="/tags/ASP-NET-WebForm/">ASP.NET-WebForm<span>3</span></a></li>
-		
-			<li><a href="/tags/msbuild/">msbuild<span>1</span></a></li>
-		
-			<li><a href="/tags/Go-lang/">Go-lang<span>1</span></a></li>
-		
-			<li><a href="/tags/Windows/">Windows<span>2</span></a></li>
-		
-			<li><a href="/tags/Linux/">Linux<span>1</span></a></li>
-		
-			<li><a href="/tags/VisualStudio/">VisualStudio<span>2</span></a></li>
-		
-			<li><a href="/tags/Oh-My-Zsh/">Oh-My-Zsh<span>1</span></a></li>
+			<li><a href="/tags/7zip/">7zip<span>2</span></a></li>
 		
 			<li><a href="/tags/JavaScript/">JavaScript<span>1</span></a></li>
 		
-			<li><a href="/tags/jqGrid/">jqGrid<span>1</span></a></li>
+			<li><a href="/tags/Windows/">Windows<span>2</span></a></li>
 		
-			<li><a href="/tags/技术之外/">技术之外<span>1</span></a></li>
+			<li><a href="/tags/EntityFramework/">EntityFramework<span>1</span></a></li>
 		
-			<li><a href="/tags/ASP-NET-MVC/">ASP.NET-MVC<span>3</span></a></li>
-		
-			<li><a href="/tags/NET/">.NET<span>4</span></a></li>
-		
-			<li><a href="/tags/Markdown/">Markdown<span>1</span></a></li>
-		
-			<li><a href="/tags/SQL-Server/">SQL-Server<span>7</span></a></li>
-		
-			<li><a href="/tags/Shell/">Shell<span>1</span></a></li>
+			<li><a href="/tags/msbuild/">msbuild<span>1</span></a></li>
 		
 			<li><a href="/tags/IIS/">IIS<span>1</span></a></li>
 		
 			<li><a href="/tags/ASP-NET-vNext/">ASP.NET-vNext<span>1</span></a></li>
+		
+			<li><a href="/tags/Shell/">Shell<span>1</span></a></li>
+		
+			<li><a href="/tags/GitHub/">GitHub<span>1</span></a></li>
+		
+			<li><a href="/tags/算法/">算法<span>2</span></a></li>
+		
+			<li><a href="/tags/NET/">.NET<span>4</span></a></li>
+		
+			<li><a href="/tags/MacOS/">MacOS<span>1</span></a></li>
+		
+			<li><a href="/tags/ASP-NET-MVC/">ASP.NET-MVC<span>3</span></a></li>
+		
+			<li><a href="/tags/Oh-My-Zsh/">Oh-My-Zsh<span>1</span></a></li>
+		
+			<li><a href="/tags/XUnit/">XUnit<span>1</span></a></li>
+		
+			<li><a href="/tags/jqGrid/">jqGrid<span>1</span></a></li>
+		
+			<li><a href="/tags/Ruby/">Ruby<span>2</span></a></li>
+		
+			<li><a href="/tags/Deployment/">Deployment<span>1</span></a></li>
+		
+			<li><a href="/tags/Linux/">Linux<span>1</span></a></li>
+		
+			<li><a href="/tags/Markdown/">Markdown<span>1</span></a></li>
 		
 		
 		   <li><a href="/tags">...<span>30</span></a></li>
@@ -348,22 +328,6 @@
 
 
 <!-- syntax highlighting -->
-
-  <script>
-  marked.setOptions({
-    highlight: function (code, lang) {
-        return hljs.highlightAuto(code).value;
-    }
-  });
-  function Highlighting(){
-    var markdowns = document.getElementsByClassName('markdown');
-    for(var i=0;i<markdowns.length;i++){
-        if(markdowns[i].innerHTML) markdowns[i].innerHTML =marked(markdowns[i].innerHTML);
-    }
-  }
-  window.addEventListener('DOMContentLoaded', Highlighting, false);
-  window.addEventListener('load', Highlighting, false);
-  </script>
 
 
 </body>
