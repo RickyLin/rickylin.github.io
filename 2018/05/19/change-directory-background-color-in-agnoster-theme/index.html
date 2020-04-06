@@ -1,0 +1,343 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Ubuntu 18.04 on Windows 10 更改 Oh-My-Zsh agnoster 主题下的目录背景色 | Ricky Lin</title>
+  <meta name="author" content="Ricky Lin">
+  
+  <meta name="description" content="这是 Ricky Lin 的博客站点">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="Ubuntu 18.04 on Windows 10 更改 Oh-My-Zsh agnoster 主题下的目录背景色"/>
+  <meta property="og:site_name" content="Ricky Lin"/>
+
+  
+    <meta property="og:image" content=""/>
+  
+
+  
+  
+    <link href="/favicon.png" rel="icon">
+  
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/themes/cerulean.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/font-awesome.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/responsive.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/highlight-default.min.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/google-fonts.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/comment.css" media="screen" type="text/css">
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.9/es5-shim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.7/es5-sham.min.js"></script>
+  <![endif]-->
+
+  <script src="/js/jquery-2.0.3.min.js"></script>
+  
+    <script src="/js/marked.js"></script>
+    <script src="/js/comment.js"></script>
+    <script src="/js/timeago.min.js"></script>
+    <script src="/js/highlight.min.js"></script>
+	<script src="/js/spin.min.js"></script>
+  
+  <!-- analytics -->
+  
+
+
+
+
+  <script type="text/javascript">
+    var sdkInstance="appInsightsSDK";window[sdkInstance]="appInsights";var aiName=window[sdkInstance],aisdk=window[aiName]||function(e){
+      function n(e){t[e]=function(){var n=arguments;t.queue.push(function(){t[e].apply(t,n)})}}var t={config:e};t.initialize=!0;var i=document,a=window;setTimeout(function(){var n=i.createElement("script");n.src=e.url||"https://az416426.vo.msecnd.net/next/ai.2.min.js",i.getElementsByTagName("script")[0].parentNode.appendChild(n)});try{t.cookie=i.cookie}catch(e){}t.queue=[],t.version=2;for(var r=["Event","PageView","Exception","Trace","DependencyData","Metric","PageViewPerformance"];r.length;)n("track"+r.pop());n("startTrackPage"),n("stopTrackPage");var s="Track"+r[0];if(n("start"+s),n("stop"+s),n("setAuthenticatedUserContext"),n("clearAuthenticatedUserContext"),n("flush"),!(!0===e.disableExceptionTracking||e.extensionConfig&&e.extensionConfig.ApplicationInsightsAnalytics&&!0===e.extensionConfig.ApplicationInsightsAnalytics.disableExceptionTracking)){n("_"+(r="onerror"));var o=a[r];a[r]=function(e,n,i,a,s){var c=o&&o(e,n,i,a,s);return!0!==c&&t["_"+r]({message:e,url:n,lineNumber:i,columnNumber:a,error:s}),c},e.autoExceptionInstrumented=!0}return t
+      }({
+          instrumentationKey:"728568e9-6aa0-4b28-9466-4ba46620ade0"
+      });
+    
+    window[aiName]=aisdk,aisdk.queue&&0===aisdk.queue.length&&aisdk.trackPageView({});
+  </script>
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body>
+  <nav id="main-nav" class="navbar navbar-inverse navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <button type="button" class="navbar-header navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	<span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+       <a class="navbar-brand" href="/">Ricky Lin</a>
+      <div class="collapse navbar-collapse nav-menu">
+		<ul class="nav navbar-nav">
+		  
+		  <li>
+			<a href="/archives" title="All the articles.">
+			  <i class="fa fa-archive"></i>Archives
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/tags" title="All the tags.">
+			  <i class="fa fa-tags"></i>Tags
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/HelpfulLinks" title="Helpful links gathered from the Internet.">
+			  <i class="fa fa-link"></i>Helpful Links
+			</a>
+		  </li>
+		  
+		</ul>
+      </div>
+    </div> <!-- container -->
+</nav>
+<div class="clearfix"></div>
+
+  <div class="container">
+    <div class="content">
+      
+
+
+	
+		<div class="page-header page-header-inverse ">		
+			<h1 class="title title-inverse "> Ubuntu 18.04 on Windows 10 更改 Oh-My-Zsh agnoster 主题下的目录背景色</h1>
+		</div>		
+	
+
+
+
+
+
+
+<div class="row post">
+	<!-- cols -->
+	
+	<div id="top_meta"></div>
+	<div class="col-md-9">
+	
+
+	<!-- content -->
+	<div class="mypage">		
+	  		
+
+	  <h1 id="题外话"><a href="#题外话" class="headerlink" title="题外话"></a>题外话</h1><p>我的 MacBook Pro 已经使用了6年多的时间，尽管作为一个 .NET 程序员绝大部分时间都是在 Windows 下工作，直到 .NET Core 的逐步成熟。要说 Mac OS，最满意的地方就是它的终端 iTerm2 + Oh-My-Zsh，既好看又好用。然而在 MacBook Pro 里跑 Windows 无论是用 Parallels Desktop 虚拟机还是 BootCamp，都多多少少有些不便的地方，尤其是电池的续航力，完全无法开开心心的不插电源写代码写上3、4个小时，加上6年时间电池的老化，连 Mac OS 下都撑不住2、3小时。所以，虽然我之前给它升级了512G SSD, 16G RAM（2012款最后一代可以自行升级的MBP），但因为电池问题和 Windows 系统的问题，最终还是决定尝试换回一款 Windows 笔记本，毕竟微软这几年无论是拥抱开源、做 .NET Core，还是出的这些硬件都深得我心（可惜 Windows Phone 还是废了），感觉比苹果进步更大。而苹果已经在“轻薄”这2个字上走火入魔、不顾一切了。</p>
+<p>如果你问我为何一个 .NET 程序员买 MBP？因为当年我换笔记本的时候被那一大票的 16:9 宽屏及 13xx * 7xx 分辨率的笔记本恶心到了，写代码完全接受不了那么扁的屏幕和那么低的分辨率，最后一怒之下买了十分昂贵的 16:10 屏幕的 15’’ MBP…</p>
+<p>如果你问我现在换了哪款 Windows 笔记本，我现在用的是 Surface Book 2——绝对的生产力利器……只是比当年买的 MBP 还贵上一大大大截…… <span class="github-emoji" style="display:inline;color: transparent;background:no-repeat url(https://github.githubassets.com/images/icons/emoji/unicode/1f613.png?v8) center/contain" data-src="https://github.githubassets.com/images/icons/emoji/unicode/1f613.png?v8">😓</span></p>
+<a id="more"></a>
+
+<h1 id="正篇"><a href="#正篇" class="headerlink" title="正篇"></a>正篇</h1><p>我本人还是非常喜欢 Windows 10 系统的，要说 Windows 相比类 Unit 系统最大的不足之处就是终端命令行部分非常弱，既不好看也不好用。。。那有什么办法弥补吗？也有，就是 Windows 10 里的 Linux 子系统！前几天从 Windows 10 自带的 Microsft Store 上下载安装了 Ubuntu 18.04，然后安装了 Zsh 和 Oh-My-Zsh 再设置成我最喜欢的 agnoster 主题，基本上和我以前用 MBP 的终端的效果非常接近了。看起来是这样的：</p>
+<img src="/2018/05/19/change-directory-background-color-in-agnoster-theme/DefaultFolderColor.PNG" class="" title="Default Folder Color">
+
+<p>除了没有 iTerm2 的各种窗口切分能力，单讲终端本身的使用已经和 Mac OS 下无异了，毕竟是同一套东西。但也有个小问题，就是当前路径这种蓝色背景、黑色字体实在是标准“程序员级别的审美”，那是完全看不清啊！怎么办？翻遍了整个互联网也没发现什么特别简单、有效的解决方法，最终还是靠自己想办法解决。说起来倒也简单，就是自己修改 agnoster 主题呗。</p>
+<p>首先，在 Ubuntu 里用文本编辑器打开 agnoster 的主题文件：</p>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim ~/.oh-my-zsh/themes/agnoster.zsh-theme</span><br></pre></td></tr></tbody></table></figure>
+
+<p>然后找到这个地方：</p>
+<img src="/2018/05/19/change-directory-background-color-in-agnoster-theme/OriginalTheme.PNG" class="" title="Original Theme">
+
+<p>看到那个 <code>blue</code> 了吗？把它改成一个合适的颜色就行。我改成了 <code>075</code> 这个颜色：</p>
+<img src="/2018/05/19/change-directory-background-color-in-agnoster-theme/ChangedTheme.PNG" class="" title="Changed Theme">
+
+<p>然后保存、退出，再关闭 Ubuntu 并重新打开，现在当前目录看起来是这样的：</p>
+<img src="/2018/05/19/change-directory-background-color-in-agnoster-theme/NewFolderColor.PNG" class="" title="New Folder Color">
+
+<p>是不是看起来好多了？</p>
+<p>这种做法的缺点是改了主题文件导致 oh-my-zsh 的 repository 不“干净”了，估计下次升级 oh-my-zsh 之前需要还原才能升级。不过这已经是我目前最好的解决方法了。。。</p>
+<p>最后，天晓得 <code>075</code> 是什么颜色？这里附上一个系统支持的颜色表：</p>
+<img src="/2018/05/19/change-directory-background-color-in-agnoster-theme/TerminalColors.jpg" class="" title="Terminal Colors"><script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>	  
+	</div>
+
+	<!-- recommended posts -->
+	
+
+	<div>
+  	<center>
+	<div class="pagination">
+<ul class="pagination">
+	 
+				
+    	<li class="prev"><a href="/2018/05/20/fix-the-issue-chrome-cannot-access-internet/" class="alignleft prev"><i class="fa fa-arrow-circle-o-left"></i>上一页</a></li>
+  		
+
+        <li><a href="/archives"><i class="fa fa-archive"></i>Archive</a></li>
+
+		
+		   <li class="next"><a href="/2018/03/16/wrap-text-in-td-with-css/" class="alignright next">下一页<i class="fa fa-arrow-circle-o-right"></i></a></li>         
+        
+	
+</ul>
+</div>
+
+    </center>
+	</div>
+
+    <!-- share -->
+    
+        
+
+        
+
+    
+	
+	<!-- comment -->
+	
+<section id="comment">
+  <h2 class="title">留言</h2>
+    	 
+	 <div id="comment-thread"></div>
+	 <div id="loading-spin"></div>
+	 <script type="text/javascript">
+	   getComments({
+           type: "github" ? "github" : "github",       
+	       user: "rickylin",
+	       repo: "BlogComments",
+		   client_id: "c345ccb22c518a9ffba5",
+           client_secret: "65b82b6548d7c441725ba6b0dd18476ab4cc8cf1",
+		   no_comment: "暂时还没有留言呢，点击下面的按钮去留言吧！",
+		   go_to_comment: "去留言",
+		   no_issue: "no_issue",
+		   issue_title: "Ubuntu 18.04 on Windows 10 更改 Oh-My-Zsh agnoster 主题下的目录背景色",
+		   issue_id: "",
+		   btn_class: "btn btn-primary",
+		   comments_target: "#comment-thread",
+		   loading_target: "#loading_spin"
+		   });
+	 </script>
+  
+</section>
+
+
+	</div> <!-- col-md-9/col-md-12 -->
+		
+	
+	<div id="side_meta">
+		<div class="col-md-3" id="post_meta"> 
+
+	<!-- date -->
+	
+	<div class="meta-widget">
+	<i class="fa fa-clock-o"></i>
+	2018-05-19 
+	</div>
+	
+
+	<!-- categories -->
+    
+
+	<!-- tags -->
+	
+	<div class="meta-widget">
+	<a data-toggle="collapse" data-target="#tags"><i class="fa fa-tags"></i></a>		  
+    <ul id="tags" class="tag_box list-unstyled collapse in">	  
+	    
+  <li><a href="/tags/Oh-My-Zsh/">Oh-My-Zsh<span>1</span></a></li>
+    </ul>
+	</div>
+	
+
+	<!-- toc -->
+	<div class="meta-widget">
+	
+	</div>
+	
+    <hr>
+	
+</div><!-- col-md-3 -->
+
+	</div>
+		
+
+</div><!-- row -->
+
+
+
+    </div>
+  </div>
+  <div class="container-narrow">
+    <footer> <div>
+  <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">
+    <img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" />
+  </a>
+  <br />
+  本作品采用<a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。
+</div>
+<div>
+  &copy; 2020 Ricky Lin
+  
+      with help from <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="http://getbootstrap.com/" target="_blank">Twitter Bootstrap</a>. Theme by <a href="http://github.com/wzpan/hexo-theme-freemind/" target="_blank" rel="noopener">Freemind</a>.    
+  </div> </footer>
+  </div> <!-- container-narrow -->
+  
+
+
+  
+<a id="gotop" href="#">   
+  <span>▲</span> 
+</a>
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/search.js"></script> 
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+
+
+<!-- syntax highlighting -->
+
+  <script>
+  marked.setOptions({
+    highlight: function (code, lang) {
+        return hljs.highlightAuto(code).value;
+    }
+  });
+  function Highlighting(){
+    var markdowns = document.getElementsByClassName('markdown');
+    for(var i=0;i<markdowns.length;i++){
+        if(markdowns[i].innerHTML) markdowns[i].innerHTML =marked(markdowns[i].innerHTML);
+    }
+  }
+  window.addEventListener('DOMContentLoaded', Highlighting, false);
+  window.addEventListener('load', Highlighting, false);
+  </script>
+
+
+</body>
+</html>
